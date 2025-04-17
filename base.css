@@ -1,0 +1,78 @@
+/* Full-page centering */
+.ig-call-to-action-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Ensures it takes the full screen height */
+  padding: 20px; /* Prevents it from sticking to the edges */
+}
+
+/* Styling for the card */
+.ig-call-to-action {
+  width: 250px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures contents are centered */
+}
+
+/* Profile image styling */
+.ig-profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  margin-bottom: -15px;
+}
+
+.ig-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content */
+.ig-content {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures text stays centered */
+}
+
+.ig-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.ig-subtitle {
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+  margin: 4px 0 10px;
+}
+
+.ig-button {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ig-button:hover {
+  background: #0056b3;
+}
