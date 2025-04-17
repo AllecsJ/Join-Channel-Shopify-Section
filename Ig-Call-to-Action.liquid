@@ -1,0 +1,48 @@
+<div class="ig-call-to-action-wrapper">
+  <div class="ig-call-to-action">
+    <div class="ig-profile">
+      <img src="{{ section.settings.image | img_url: 'medium' }}" alt="Profile Image">
+    </div>
+    <div class="ig-content">
+      <p class="ig-title">{{ section.settings.title }}</p>
+      <p class="ig-subtitle">{{ section.settings.subtitle }}</p>
+      <a href="{{ section.settings.link }}" class="ig-button">Join channel</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "IG Call to Action",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Profile Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Tours & Updates ✍️"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Followers can join"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Join Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "IG Call to Action",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
